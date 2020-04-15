@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+    text{
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>EJS Welcome to <%= title %></p>
+<input type="checkbox">
+<script>
+  var data = '[{"createTime":"2020-03-13 14:34:56","contractAgreementId":"HT2020030000098","modifyType":"1","operationType":"1","signStatus":"1","agreementId":"73B7B9162637DF4D6D3D670D64CB4AD4","highValue":"contractStartTime,contractEndTime"},{"createTime":"2020-03-13 15:15:27","contractAgreementId":"HT2020030000098","modifyType":"2","operationType":"2","signStatus":"1","agreementId":"EF888F60739D9714E53CC38E34AC2F5C"}]'
+console.log(typeof(data))
+  console.log(data.split("'")[0])
+</script>
+</body>
+</html>
