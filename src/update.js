@@ -1,12 +1,12 @@
-const {User} = require("./model")
+const {User} = require('./model')
 
 !(async function () {
     const updatezhangsan = await User.update({
-        nickName: "zhangsan1",
+        nickName: 'zhangsan1',
     },{
         where:{
-            userName:"zhangsan"
+            userName:'zhangsan'
         }
     })
-    console.log("updatezhangsan",updatezhangsan)
+    console.log('updatezhangsan',updatezhangsan)
 })()

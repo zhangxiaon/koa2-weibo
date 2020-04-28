@@ -1,5 +1,5 @@
-const Sequelize = require("sequelize")
-const seq = require("./seq")
+const Sequelize = require('sequelize')
+const seq = require('./seq')
 
 //创建user表
 const User = seq.define('user',{
@@ -13,7 +13,7 @@ const User = seq.define('user',{
     },
     nickName:{
         type:Sequelize.STRING,
-        comment:"昵称"
+        comment:'昵称'
     }
 })
 

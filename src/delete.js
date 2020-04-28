@@ -1,12 +1,12 @@
-const {User} = require("./model")
+const {User,Blog} = require('./model')
 
 !(async function () {
-    const updatezhangsan = await User.update({
-        nickName: "zhangsan1",
-    },{
+//   删除
+    const delBlogRes = await Blog.destroy({
         where:{
-            userName:"zhangsan"
+            id:1
         }
     })
-    console.log("updatezhangsan",updatezhangsan)
+    console.log('delBlogRes',delBlogRes)
 })()
+
